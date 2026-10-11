@@ -42,7 +42,7 @@ h1 {
   font-size: 69px;
   margin-bottom: 15px;
   font-family: mono, monospace;
-  margin-right: 60;
+  margin-right: 60px;
 }
 
 .introduction {
@@ -375,4 +375,199 @@ html {
 
 .contact-form button:hover {
   background-color: #595858;
+}
+
+/* ------------TABLET UX------------ */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .intro {
+    padding: 80px 30px;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .profile-text {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 45px;
+    margin-right: 0;
+  }
+
+  .about {
+    padding: 50px 30px;
+  }
+
+  .about h2 {
+    max-width: 100%;
+  }
+
+  .about-lists {
+    flex-direction: column;
+    margin-right: 0;
+    gap: 10px;
+  }
+
+  .about-lists > div {
+    margin: 0;
+  }
+
+  .about h3 {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .skills {
+    padding: 60px 30px;
+  }
+
+  .skill-container {
+    grid-template-columns: 48% 48%;
+    gap: 20px;
+  }
+
+  .projects {
+    padding: 60px 30px;
+  }
+
+  .project-card {
+    width: 45%;
+  }
+
+  .experience {
+    padding: 60px 30px;
+  }
+
+  .contact {
+    padding: 60px 30px;
+  }
+}
+
+/* ------------MOBILE UX------------ */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .nav-links {
+    gap: 5px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .intro {
+    min-height: calc(100vh - 120px);
+    padding: 40px 20px;
+  }
+
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .introduction {
+    font-size: 16px;
+  }
+
+  .tagline {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .about {
+    padding: 40px 20px;
+  }
+
+  .about h2 {
+    font-size: 25px;
+  }
+
+  .about h3 {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  .about ul {
+    font-size: 16px;
+  }
+
+  .skills {
+    padding: 40px 20px;
+  }
+
+  .skill-container {
+    grid-template-columns: 100%;
+    gap: 15px;
+  }
+
+  .projects {
+    padding: 40px 20px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .experience {
+    padding: 40px 20px;
+  }
+
+  .experience table {
+    min-width: 600px;
+  }
+
+  .contact {
+    padding: 40px 20px;
+  }
+
+  .contact h2 {
+    font-size: 25px;
+  }
+
+  .contact p {
+    font-size: 16px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
 }
