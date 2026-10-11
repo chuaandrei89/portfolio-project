@@ -6,12 +6,17 @@ body {
 }
 
 .intro {
-  padding: 265px 100px;
+  min-height: calc(100vh - 80px);
+  padding: 60px 100px;
   width: 100%;
   background-image: url("images/background.jpg");
   background-size: cover;
+  background-position: center;
   box-sizing: border-box;
   color: rgb(246, 244, 244);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-container {
@@ -264,4 +269,51 @@ h1 {
 
 .experience tr:hover td {
   background-color: #dddddd;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-sizing: border-box;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  color: #070707;
+  font-size: 24px;
+  margin: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  background-color: rgb(35, 34, 34);
+  color: white;
+  border-radius: 5px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
